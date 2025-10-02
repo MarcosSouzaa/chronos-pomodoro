@@ -1,0 +1,10 @@
+/*Esse arquivo Heading.module.css pode ter um escopo*/
+
+.heading {
+  background-color: purple;
+  color: black;
+}
+
+.cyan {
+  color: cyan;
+}
