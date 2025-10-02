@@ -4,8 +4,6 @@ import './style/theme.css';
 import './style/global.css';
 
 export function App() {
-  console.log('oi');
-
   return (
     //aqui, estou paasando props para o componente Heading
     // o props é um objeto que guarda todas as propriedades que eu passo
@@ -17,9 +15,7 @@ export function App() {
     //dentro do componente Heading, eu posso acessar essas propriedades através do objeto props
     //por exemplo, props.attr vai me dar o valor 123 e props.attr2 vai me dar o valor 'StringQualquer'
     <>
-      <Heading attr={123} attr2={'StringQualquer'}>
-        Olá Mundo!
-      </Heading>
+      <Heading>Olá Mundo!</Heading>
       <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque
         accusantium, laboriosam esse quo eveniet quasi praesentium ipsum sunt

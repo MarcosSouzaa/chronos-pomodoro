@@ -10,7 +10,11 @@ import objStyles from './Heading.module.css';
 //Essa extensão vai me ajudar a ver as classes que eu tenho disponíveis
 //no arquivo Heading.module.css
 //Vou usar a classe heading que eu criei no arquivo Heading.module.css
-export function Heading(props.) {
+type HeadingProps = {
+  children: string;
+};
+
+export function Heading(props: HeadingProps) {
   return (
     //Posso usar template string para usar mais de uma classe
     // <h1 className={`${objStyles.heading} ${objStyles.cyan}`}>Olá Mundo!</h1>

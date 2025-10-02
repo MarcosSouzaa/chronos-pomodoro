@@ -1,10 +1,18 @@
 /* css globalS */
-
-body {
-  font-family: sans-serif;
-  font-size: 30px;
+/* Vou usar o seletor de CSS que engloba tudo: *{} */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-h1 {
-  color: var(--primary);
+html {
+  font-size: 62.5%;
+}
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+    Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 1.6rem; /* 16px - se fosse 3.6rem - 36px etc.*/
+  background: var(--gray-900); /*Estou pegando essa variável do meu tema*/
+  color: var(--text-default); /*Estou pegando essa variável do meu tema*/
 }
