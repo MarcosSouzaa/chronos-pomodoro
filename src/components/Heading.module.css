@@ -1,1 +1,10 @@
 /*Esse arquivo Heading.module.css pode ter um escopo*/
+.heading {
+  /* Se eu fosse usar magem para fazer o espaçamento:
+  margin: 3.2rem 0; - 32px em cima e embaixo e zero nas laterais*/
+
+  display: flex; /* vou alinhar tudo ao centro*/
+  align-items: center;
+  justify-content: center;
+  gap: 2.4rem; /*24px de espaçamento entre os elementos*/
+}
