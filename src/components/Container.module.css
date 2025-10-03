@@ -1,0 +1,13 @@
+.container-fluid {
+  max-width: auto; /* largura total */
+}
+
+/* Bloco onde está o conteúdo */
+.container {
+  max-width: 98rem; /* largura máxima de 980px */
+  margin: 0 auto; /* centralizar a minha aplicação na tela */
+}
+/* conteúdo dentro do container */
+.content {
+  margin: 3.2rem; /* 32px de espaçamento em todas as direções afasta dos cantos*/
+}

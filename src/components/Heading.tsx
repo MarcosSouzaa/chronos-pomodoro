@@ -1,7 +1,9 @@
 import objStyles from './Heading.module.css';
 
 type HeadingProps = {
-  children: React.ReactNode; // ReactNode pode ser qualquer coisa que o React renderiza (string, number, elemento, array de elementos, fragmentos, etc)
+  /*ReactNode pode ser qualquer coisa que o React renderiza 
+(string, number, elemento, array de elementos, fragmentos, etc) */
+  children: React.ReactNode;
 };
 
 export function Heading({ children }: HeadingProps) {
