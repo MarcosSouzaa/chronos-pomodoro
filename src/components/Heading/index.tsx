@@ -1,4 +1,4 @@
-import objStyles from './Heading.module.css';
+import objStyles from './styles.module.css';
 
 type HeadingProps = {
   /*ReactNode pode ser qualquer coisa que o React renderiza 
