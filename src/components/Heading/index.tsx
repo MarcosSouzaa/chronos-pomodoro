@@ -1,4 +1,4 @@
-import objStyles from './styles.module.css';
+import styles from './styles.module.css';
 
 type HeadingProps = {
   /*ReactNode pode ser qualquer coisa que o React renderiza 
@@ -8,5 +8,5 @@ type HeadingProps = {
 
 export function Heading({ children }: HeadingProps) {
   //const {children} = props; estou desestruturando o props dentro do parametro da função
-  return <h1 className={objStyles.heading}>{children}</h1>;
+  return <h1 className={styles.heading}>{children}</h1>;
 }

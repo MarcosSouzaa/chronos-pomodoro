@@ -1,0 +1,35 @@
+/*Esse arquivo Heading.module.css pode ter um escopo*/
+.logo {
+  /* Se eu fosse usar magem para fazer o espaçamento:
+  margin: 3.2rem 0; - 32px em cima e embaixo e zero nas laterais*/
+
+  display: flex; /* vou alinhar tudo ao centro*/
+  align-items: center;
+  justify-content: center;
+  gap: 2.4rem; /*24px de espaçamento entre os elementos*/
+  padding-top: 3.2rem; /*32px de espaçamento em cima*/
+}
+/*aplica o estilo apenas no link*/
+.logoLink {
+  display: flex; /* vou alinhar tudo ao centro */
+  align-items: center; /*alinha verticalmente */
+  flex-direction: column; /*alinha um embaixo do outro*/
+  justify-content: center; /*alinha horizontalmente, no caso um do lado do outro*/
+  gap: 0.4rem; /*8px de espaçamento entre os elementos*/
+  font-weight: bold; /* Deixa o texto em negrito */
+  font-size: 4.2rem; /*42px*/
+  text-decoration: none; /*tira o sublinhado do link e do texto*/
+  color: var(--primary); /*cor do texto trazida do theme*/
+  transition: all 0.2s ease-in-out; /*transição suave para todas as propriedades que mudarem*/
+}
+
+/*quando passar o mouse por cima do link*/
+.logoLink:hover {
+  filter: brightness(50%); /*deixa o logo mais claro*/
+}
+
+.logoLink svg {
+  /*aplica o estilo apenas no ícone */
+  width: 6.4rem; /*64px*/
+  height: 6.4rem; /*64px*/
+}
