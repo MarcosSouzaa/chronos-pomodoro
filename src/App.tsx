@@ -2,6 +2,7 @@ import { Container } from './components/Container';
 import { Logo } from './components/Logo';
 import { Menu } from './components/Menu';
 import { CountDow } from './components/CountDown';
+import { DefaltInput } from './components/DefaltInput';
 
 import './style/theme.css';
 import './style/global.css';
@@ -24,8 +25,9 @@ export function App() {
       <Container>
         <form className='form' action=''>
           <div className='formRow'>
-            <label htmlFor='input'>task</label>
-            <input id='input' type='text' />
+            {/*No input geralmente vamos configurar coisas como type etc. Vou fazer isso no Componente
+  DefaltInput/index.tsx*/}
+            <DefaltInput labelText='Task' id='meuInput' type='text' />
           </div>
 
           <div className='formRow'>
