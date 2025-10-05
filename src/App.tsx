@@ -27,7 +27,12 @@ export function App() {
           <div className='formRow'>
             {/*No input geralmente vamos configurar coisas como type etc. Vou fazer isso no Componente
   DefaltInput/index.tsx*/}
-            <DefaltInput labelText='Task' id='meuInput' type='text' />
+            <DefaltInput
+              labelText='Task'
+              id='meuInput'
+              type='text'
+              placeholder='Digite algo'
+            />
           </div>
 
           <div className='formRow'>

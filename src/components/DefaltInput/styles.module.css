@@ -1,0 +1,32 @@
+.input {
+  background-color: transparent;
+  text-align: center;
+  font-size: 1.8rem;
+  padding: 0.8rem; /* padding interno é a distância entre a borda e o conteúdo */
+  color: var(--text-default); /* cor do texto puxado das variáveis do theme */
+  /*outline: none; /* remove a borda azul que aparece ao clicar */
+
+  border: 0.2rem solid transparent; /* borda transparente para evitar o "pulo" ao focar */
+  border-bottom: 0.2rem solid var(--primary); /* borda inferior colorida */
+  transition: all 0.1s ease-in-out; /* transição suave para todas as propriedades */
+}
+
+/* Estiliza quando o input estiver focado */
+.input:focus {
+  border-radius: 0.8rem; /* arredondar a borda */
+  border: 0.2rem solid var(--primary);
+}
+
+/*É o que está escrito dentro do retângulo*/
+/* estiliza o texto do placeholder :: pseudo-elemento*/
+.input::placeholder {
+  color: var(--gray-500);
+  font-size: 1.4rem;
+  font-style: italic;
+}
+
+/* estiliza o input quando estiver desabilitado */
+.input:disabled {
+  border-bottom: 0.2rem solid var(--disabled);
+  color: var(--text-muted);
+}
