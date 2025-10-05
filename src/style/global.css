@@ -1,5 +1,6 @@
 /* css globalS */
 /* Vou usar o seletor de CSS que engloba tudo: *{} */
+/*Aqui alinho todos os elementos da minha página principal*/
 * {
   margin: 0;
   padding: 0;
@@ -15,4 +16,22 @@ body {
   font-size: 1.6rem; /* 16px - se fosse 3.6rem - 36px etc.*/
   background: var(--gray-900); /*Estou pegando essa variável do meu tema*/
   color: var(--text-default); /*Estou pegando essa variável do meu tema*/
+}
+
+/* espaçamento para as divs, não envolve o que está dentro das divs*/
+.form {
+  display: flex; /*Deixa o formulário em linha*/
+  align-items: center; /*Alinha os itens ao centro*/
+  justify-content: center; /*Centraliza os itens*/
+  flex-direction: column; /*Deixa os itens em coluna*/
+  gap: 2.4rem; /*Espaçamento entre os itens do formulário*/
+}
+
+/*Espaçameto para os elementos que estão dentro das divs*/
+.formRow {
+  display: flex; /*Deixa o formulário em linha*/
+  align-items: center; /*Alinha os itens ao centro*/
+  justify-content: center; /*Centraliza os itens*/
+  flex-direction: column; /*Deixa os itens em coluna*/
+  gap: 2.4rem; /*Espaçamento entre os itens do formulário*/
 }
