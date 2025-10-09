@@ -5,10 +5,11 @@ import { CountDow } from './components/CountDown';
 import { DefaltInput } from './components/DefaltInput';
 import { Cycles } from './components/Cycles';
 import { DefaltButton } from './components/DefaltButton';
-import { PlayCircleIcon, StopCircleIcon } from 'lucide-react';
+import { PlayCircleIcon } from 'lucide-react';
 
 import './style/theme.css';
 import './style/global.css';
+import { Footer } from './components/Footer';
 
 export function App() {
   return (
@@ -39,7 +40,7 @@ export function App() {
           </div>
 
           <div className='formRow'>
-            <p>Lorem ipsum dolor sit amet.</p>
+            <p>Nesse ciclo descanse por 5 min.</p>
           </div>
 
           <div className='formRow'>
@@ -47,10 +48,13 @@ export function App() {
           </div>
 
           <div className='formRow'>
-            <DefaltButton icon={<PlayCircleIcon />} color='green' />
-            <DefaltButton icon={<StopCircleIcon />} color='red' />
+            <DefaltButton icon={<PlayCircleIcon />} />
           </div>
         </form>
+      </Container>
+
+      <Container>
+        <Footer />
       </Container>
     </>
   );
