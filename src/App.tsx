@@ -3,6 +3,9 @@ import { Logo } from './components/Logo';
 import { Menu } from './components/Menu';
 import { CountDow } from './components/CountDown';
 import { DefaltInput } from './components/DefaltInput';
+import { Cycles } from './components/Cycles';
+import { DefaltButton } from './components/DefaltButton';
+import { PlayCircleIcon, StopCircleIcon } from 'lucide-react';
 
 import './style/theme.css';
 import './style/global.css';
@@ -40,12 +43,12 @@ export function App() {
           </div>
 
           <div className='formRow'>
-            <p>Ciclos</p>
-            <p>0 0 0 0 0 0 0 0 </p>
+            <Cycles />
           </div>
 
           <div className='formRow'>
-            <button>Enviar</button>
+            <DefaltButton icon={<PlayCircleIcon />} color='green' />
+            <DefaltButton icon={<StopCircleIcon />} color='red' />
           </div>
         </form>
       </Container>
