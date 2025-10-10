@@ -11,33 +11,34 @@ import { Heading } from './components/Heading';
 
 import './style/theme.css';
 import './style/global.css';
+import { useState } from 'react';
+
+/* REFATORANDO
+ -------------------------------------------------  
+ Eu quero que todos os componentes que usam 'numero'
+ saibam das mudanças em seu valor.
+ Posso usar um Hook chamado useState que é uma função
+ importado do React.
+ Sempre que eu usar useState, não vou usar atribuição (=) 
+ diretamente. Eu preciso usar a função do segundo array
+ do índice 1 no caso, para configurar o valor passado.
+ ex: primeiro passo o número e depois configuro com a 
+ função do state()
+ const [numero, configurar número]
+ Agora, toda vez que eu mudar o valor de número, o React
+ renderizará todos campos que usarem a variável número
+ o nome disso é programação reativa. */
 
 export function App() {
-  let numero = 0;
-  /*Função lidar com o click*/
+  const [numero, setNumero] = useState(0);
+
   function handleClick() {
-    const span = document.getElementById('numero');
-    /*se não existir span retorna e não faz nada */
-    if (!span) return;
-
-    /* se existir, soma um número e coloco o texto de dentro do span 
-'span.innerText' igual ao meu número */
-    numero += 1;
-    span.innerText = numero.toString();
-    console.log(numero, Date.now());
-    /* Dessa forma eu sincronizei o meu número do botão com o console
-    mas ele não sincroniza o label. Esse problema é chamado de efeito colateral
-    o React não está monitorando.
-     */
+    setNumero(numero + 1);
   }
-
   return (
     <>
-      <Heading>
-        Número: <span id='numero'>{numero}</span>
-      </Heading>
-      {/* No clique do botão a função anônima mostra o número no console (f12)
-      depois vou tirar daqui e criar uma função handleClick lá em cima.*/}
+      <Heading>Número: {numero}</Heading>
+
       <button onClick={handleClick}>Aumenta</button>
 
       <Container>
