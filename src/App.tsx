@@ -21,19 +21,35 @@ import { useState } from 'react';
  importado do React.
  Sempre que eu usar useState, não vou usar atribuição (=) 
  diretamente. Eu preciso usar a função do segundo array
- do índice 1 no caso, para configurar o valor passado.
+ do índice 1 no caso, para setar o valor passado.
  ex: primeiro passo o número e depois configuro com a 
  função do state()
- const [numero, configurar número]
+ const [numero, setNumero]
  Agora, toda vez que eu mudar o valor de número, o React
  renderizará todos campos que usarem a variável número
  o nome disso é programação reativa. */
+
+/*Se eu for utililizar uma Reinicialização pesada: 
+ --------------------------------------------------
+export function App() {
+  const [numero, setNumero] = useState(() => {
+    console.log('Lazy initialization');
+    return 0;
+  });
+*/
+
+/* Se eu não for usar o valor anterior:
+const [numero, setNumero] = useState(0);
+*/
 
 export function App() {
   const [numero, setNumero] = useState(0);
 
   function handleClick() {
-    setNumero(numero + 1);
+    /*setNumero(numero + 1); Essa não é a forma correta de eu usar essa
+    função toda vez que eu dependo de um valor anterior para mudar o estado
+    vou usar uma prevState (arrow function) que vai guardar o valor anterior*/
+    setNumero(prevState => prevState + 1);
   }
   return (
     <>
