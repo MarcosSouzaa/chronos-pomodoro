@@ -1,7 +1,7 @@
 import { PlayCircleIcon } from 'lucide-react';
-import { Cycles } from '../Cycles';
-import { DefaltButton } from '../DefaltButton';
-import { DefaltInput } from '../DefaltInput';
+import { Cycles } from '../cycles';
+import { DefaltButton } from '../defaltButton';
+import { DefaltInput } from '../defaltInput';
 
 export function MainForm() {
   return (
